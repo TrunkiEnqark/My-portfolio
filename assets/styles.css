@@ -110,6 +110,7 @@ span {
 }
 
 .home-content h3 {
+    font-size: 30px;
     margin-bottom: 2rem;
     margin-top: 1rem;
     line-height: 1.5rem;
@@ -271,15 +272,6 @@ span {
     position: relative;
 }
 
-/* .timeline-items::before {
-    content: "";
-    position: absolute;
-    width: 5px;
-    height: 100%;
-    background-color: var(--main-color);
-    left: -10px;
-} */
-
 .timeline-item {
     margin-bottom: 40px;
     width: 100%;
@@ -335,7 +327,7 @@ span {
 }
 
 .work-experience {
-    padding: 100px 50px;
+    padding: 100px 100px;
     background: var(--second-bg-color);
 }
 
@@ -346,19 +338,19 @@ span {
 .work-items {
     display: flex;
     align-items: center;
+    justify-self: center;
     text-align: left;
     gap: 10rem;
-    margin-bottom: 10rem;
-    margin-right: 0;
+    margin: 2rem 100px;
 }
 
 .work-img img {
     position: relative;
-    top: 3rem;
-    width: 30vw;
+    width: 18vw;
     box-shadow: 0 0 25px var(--main-color);
     cursor: pointer;
-    transition: 0.4 ease-in-out;
+    border-radius: 5%;
+    transition: 0.4s ease-in-out;
 }
 
 .work-img img:hover {
@@ -369,7 +361,7 @@ span {
 }
 
 .work-timeline h2 {
-    font-size: 25px;
+    font-size: 30px;
     font-weight: 800;
     margin: 0 0 10px;
     color: white;
@@ -380,4 +372,29 @@ span {
     font-size: 20px;
     font-weight: 300;
     line-height: 22px;
+}
+
+.work-items:last-child {
+    margin-bottom: 0%;
+}
+
+.bx bxs-right-arrow {
+    font-size: 15px;
+}
+
+.work-content {
+    border: 3px solid var(--main-color);
+    padding: 30px 100px;
+    cursor: pointer;
+    background-color: var(--bg-color);
+    box-shadow: 0 0 10px var(--main-color);
+    border-radius: 4rem;
+    transition: 0.4s ease-in-out;
+}
+
+.work-content:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 15px var(--main-color),
+                0 0 25px var(--main-color),
+                0 0 50px var(--main-color);
 }
