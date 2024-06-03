@@ -4,15 +4,15 @@ let navLinks = document.querySelectorAll('header nav a');
 let sections = document.querySelectorAll('section');
 let navigator = document.querySelector('navbar');
 
-// window.addEventListener("scroll", () => {
-//     var scrollTop = window.pageXOffset || document.documentElement.scrollTop;
-//     if (scrollTop > lastScrollTop) {
-//         navbar.classList.add('hidden');
-//     } else {
-//         navbar.classList.remove('hidden');
-//     }
-//     lastScrollTop = scrollTop;
-// })
+window.addEventListener("scroll", () => {
+    var scrollTop = window.pageXOffset || document.documentElement.scrollTop;
+    if (scrollTop > lastScrollTop) {
+        navbar.classList.add('hidden');
+    } else {
+        navbar.classList.remove('hidden');
+    }
+    lastScrollTop = scrollTop;
+})
 
 window.onscroll = () => {
     sections.forEach(sec => {
