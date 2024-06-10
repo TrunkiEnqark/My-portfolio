@@ -124,7 +124,7 @@ span {
 }
 
 .home-content h1 {
-    font-size: 7rem;
+    font-size: 4.5rem;
     font-weight: 700;
     margin-top: 1.5rem;
     line-height: 1;
@@ -217,7 +217,7 @@ span {
 }
 
 .text-animation span::before {
-    content: "Frontend Developer";
+    content: "a Frontend Developer";
     color: var(--main-color);
     animation: words 15s infinite;
 }
@@ -241,13 +241,13 @@ span {
 
 @keyframes words {
     0%, 33% {
-        content: "Frontend Developer";
+        content: "a Frontend Developer";
     }
     34%, 66% {
-        content: "AI Developer";
+        content: "an AI Developer";
     }
     67%, 100% {
-        content: "Competitive Programmer";
+        content: "a Competitive Programmer";
     }
 }
 
