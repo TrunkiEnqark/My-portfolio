@@ -19,11 +19,12 @@ window.onscroll = () => {
         let scrolledY = window.scrollY;
         let id = sec.getAttribute('id');
         let height = sec.offsetHeight;
-        let scrollTop = sec.offsetTop;
+        let scrollTop = sec.offsetTop - 200;
         console.log(scrolledY + ' ' + scrollTop + ' ' + height + ' ' + id)
         if (scrollTop <= scrolledY && scrolledY < scrollTop + height) {
             removeActiveClasses();
-            activeClassById(id);
+            const link = document.querySelector(`[href*="${id}"]`);
+            if (link) link.classList.toggle('active');
         }
     })
 }
@@ -38,13 +39,5 @@ navLinks.forEach(links => {
 function removeActiveClasses() {
     navLinks.forEach(links => {
         links.classList.remove('active')
-    })
-}
-
-function activeClassById(id) {
-    navLinks.forEach(links => {
-        if (links.href.includes(id)) {
-            links.classList.toggle('active');
-        }
     })
 }
